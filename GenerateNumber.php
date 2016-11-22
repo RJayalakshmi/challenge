@@ -18,6 +18,7 @@ function GenerateNumber($name) {
 }
 
 // Call GenerateNumber() for $_GET['name']
+// Validate the given name
 if (!empty($name = filter_input(INPUT_GET, 'name')) && preg_match('/^[a-zA-Z ]*$/', $name)) {
     echo GenerateNumber(trim($name));
 } else {
