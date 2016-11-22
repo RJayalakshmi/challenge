@@ -17,4 +17,4 @@ function GenerateNumber(name parameter){
 }
 
 // Call GenerateNumber function with name parameter and display the result using echo.
-echo GenerateNumber('Name');
+echo GenerateNumber('Name'); 
