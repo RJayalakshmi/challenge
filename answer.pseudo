@@ -1,6 +1,20 @@
-Create a public Github or Bitbucket repository.
-Commit and push 1 file named 'answer.pseudo'
-In the programming language(for backend) that is specified in this job's description, write simple, commented code for a function (or method) that takes a variable name as parameter.
-Generate a random number between 6 and 15 and return the result in this format: "Name GeneratedNumber". Eg: "Rahul 11"
-Commit and push this code to your repository.
-Paste the link to the repository along with your thought process in words in the answer.
+/* Programming Language: PHP
+ * Author : Jayalakshmi Ramasamy
+ * Date : 22/11/2016
+ * Pseudo : GenerateNumber functionality 
+ */
+
+// Define GenerateNumber with name parameter
+function GenerateNumber(name parameter){
+    // Generate random number
+    $r = rand(int $min, int $max);
+
+    // Concatenate random number with name using .(dot) operator
+    $result = $name . $r;
+
+    // Return result
+    return $result;
+}
+
+// Call GenerateNumber function with name parameter and display the result using echo.
+echo GenerateNumber('Name');
